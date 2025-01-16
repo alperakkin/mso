@@ -61,12 +61,12 @@ monitor.STATUS_WARN = (55, "⚡️")  # Change CPU warning status icon to high v
 
 
 - **Predefined Values**:
-{cpu_icon}: The icon representing CPU usage (e.g., 🟢, 🟡, 🟠, 🔴).
-{cpu_usage}: The actual CPU usage as a percentage (e.g., 35%).
-{ram_icon}: The icon representing RAM usage (similar to CPU icons).
-{ram_usage}: The actual RAM usage as a percentage.
-{disk_icon}: The icon representing disk usage.
-{disk_usage}: The actual disk usage as a percentage.
+{cpu_icon}: The icon representing CPU usage (e.g., 🟢, 🟡, 🟠, 🔴). 
+{cpu_usage}: The actual CPU usage as a percentage (e.g., 35%). 
+{ram_icon}: The icon representing RAM usage (similar to CPU icons). 
+{ram_usage}: The actual RAM usage as a percentage. 
+{disk_icon}: The icon representing disk usage. 
+{disk_usage}: The actual disk usage as a percentage. 
 
 - **Display Format**:
   Customize the display of the metrics in the menu bar using the `format()` method. By default:
