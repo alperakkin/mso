@@ -26,7 +26,7 @@ class Monitor:
 
     @property
     def cpu_usage(self):
-        return psutil.cpu_percent()
+        return psutil.cpu_percent(interval=0.05)
 
     @property
     def ram_usage(self):

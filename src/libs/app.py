@@ -10,11 +10,15 @@ class MenubarApp(rumps.App):
         self.timer.start()
 
     def update_stats(self, _):
+        # in order to get consisten cpu usage
+        # monitoring result attached to a variable to calculate each intervals
+        current_cpu_usage = self.monitor.cpu_usage
+
         self.title = self.monitor.get_format_string.format(
-            cpu_icon=self.monitor.select_icon(self.monitor.cpu_usage),
+            cpu_icon=self.monitor.select_icon(current_cpu_usage),
             ram_icon=self.monitor.select_icon(self.monitor.ram_usage),
             disk_icon=self.monitor.select_icon(self.monitor.disk_usage),
-            cpu_usage=self.monitor.cpu_usage,
+            cpu_usage=current_cpu_usage,
             ram_usage=self.monitor.ram_usage,
             disk_usage=self.monitor.disk_usage,
         )

@@ -1,6 +1,6 @@
 from libs.monitor import Monitor
 
-REFRESH_TICK = 30  # seconds
+REFRESH_TICK = 5  # seconds
 
 monitor = Monitor()
 
@@ -10,6 +10,6 @@ monitor.STATUS_ALARM = (75, "🟠")
 monitor.STATUS_CRITICAL = (95, "🔴")
 
 
-monitor.format("CPU [{cpu_icon}] {cpu_usage} | "
-               "RAM [{ram_icon}] {ram_usage} | "
-               "DISK [{disk_icon}] {disk_usage} ")
+monitor.format("{cpu_icon} CPU:  {cpu_usage}% | "
+               "{ram_icon} RAM:  {ram_usage}% | "
+               "{disk_icon} DISK: {disk_usage}% ")
