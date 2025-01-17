@@ -9,6 +9,12 @@ Tracks your Mac's system resources  with this Python-powered menu bar applicatio
 
 ## QUICK START
 
+### Installation
+Install dependencies before running the project.
+```python
+pip install -r requirements.txt
+```
+
 ### Configuration
 
 The configuration options are defined in the file located at `src/config.py`.
